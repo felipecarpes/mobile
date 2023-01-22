@@ -44,7 +44,9 @@ export function Home() {
                         amountOfDaysToFill > 0 && Array
                         .from({ length: amountOfDaysToFill })
                         .map((_, index) => (
-                            <FilledDay />
+                            <FilledDay 
+                                key={index}
+                            />
                         ))
                     }
                 </View>
